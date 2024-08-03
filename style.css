@@ -1,0 +1,40 @@
+.menu-here {
+    background-color: grey;
+    width: 200px;
+    height: 100vh;
+    position: relative;
+    transform: translateX(-90%);
+    transition: transform 0.5s cubic-bezier(0.250, 0.250, 0.750, 0.750);
+}
+.menu-here:hover {
+    transform: translateX(0);
+}
+.ul {
+    padding: 0;
+    margin: 0;
+    padding-top: 50px;
+}
+.text {
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    color: white;
+    transform: rotate(90deg);
+    transition: opacity 0.5s ease-in-out;
+    font-size: 20px;
+}
+.li {
+    color: white;
+    display: flex;
+    justify-content: baseline;
+    font-size: 24px;
+}
+.li:hover {
+    color: gold;
+}
+.menu-here:hover .text{
+    opacity: 0;
+}
+.icon {
+    color: gold;
+}
